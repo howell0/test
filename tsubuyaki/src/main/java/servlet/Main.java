@@ -32,7 +32,6 @@ public class Main extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 
-		String action = request.getParameter("action");
 		ServletContext application = this.getServletContext();
 		List<Mutter> mutterList =
 				(List<Mutter>) application.getAttribute("mutterList");
