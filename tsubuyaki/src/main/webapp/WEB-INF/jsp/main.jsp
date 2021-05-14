@@ -28,8 +28,7 @@ String errorMsg = (String) request.getAttribute("errorMsg");
 	<p><%= errorMsg %></p>
 <% } %>
 <% for(Mutter mutter : mutterList) { %>
-	<p><%= mutter.getUserName() %>:<%= mutter.getText() %>(<%= mutter.getTime() %>)
-	<a href="/tsubuyaki/Main?action=delete"><button>削除</button></a></p>
+	<p><%= mutter.getUserName() %>:<%= mutter.getText() %>(<%= mutter.getTime() %>)</p>
 <% } %>
 </body>
 </html>
